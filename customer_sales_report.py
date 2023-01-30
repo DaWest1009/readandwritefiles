@@ -15,12 +15,12 @@ newfields = (fieldnames[0], fieldnames[1])
 writer.writerow(newfields)
 
 for row in reader:
-    id = row[0]
+    cust_id = row[0]
     subtotal = float(row[3])
     tax = float(row[4])
     freight = float(row[5])
     total = subtotal + tax + freight
-    newrow = [id, total]
+    newrow = [cust_id, total]
     writer.writerow(newrow)
 
 infile.close()
