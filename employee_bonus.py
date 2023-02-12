@@ -16,6 +16,7 @@ for row in reader:
     print('Last Name:', ln)
     print('Salary:', salary)
     print('Bonus:', bonus)
+    print('Total Pay:', (float(salary) * float(bonus)) + float(salary))
     print('_'*20)
 
 infile.close()
